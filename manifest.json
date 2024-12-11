@@ -2,7 +2,7 @@
     "short_name": "Twittor",
     "name": "Twittor para héroes",
     "id": "/pwa-06-twittor/index.html",
-    "start_url": "/pwa-06-twittor/index.html",
+    "start_url": "index.html",
     "background_color": "#3498db",
     "theme_color": "#3498db",
     "display": "standalone",
