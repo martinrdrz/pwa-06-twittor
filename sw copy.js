@@ -28,14 +28,7 @@ const APP_SHELL_INMUTABLE = [
 
 self.addEventListener('install', (e) => {
     const cacheStatic = caches.open(STATIC_CACHE).then((cache) => cache.addAll(APP_SHELL));
-    const cacheInmutable = caches.open(INMUTABLE_CACHE).then((cache) => {
-        // Para manejar CORS, usa add con no-cors para los recursos externos
-        return Promise.all(
-            APP_SHELL_INMUTABLE.map((url) =>
-                fetch(url, { mode: 'no-cors' }).then((response) => cache.put(url, response))
-            )
-        );
-    });
+    const cacheInmutable = caches.open(INMUTABLE_CACHE).then((cache) => cache.addAll(APP_SHELL_INMUTABLE));
     e.waitUntil(Promise.all([cacheStatic, cacheInmutable]));
 });
 
