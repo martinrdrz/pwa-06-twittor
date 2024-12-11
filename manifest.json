@@ -2,7 +2,6 @@
     "short_name": "Twittor",
     "name": "Twittor para héroes",
     "start_url": "index.html",
-    "id": "index.html",
     "background_color": "#3498db",
     "theme_color": "#3498db",
     "display": "standalone",
@@ -47,20 +46,6 @@
             "src": "img/icons/icon-512x512.png",
             "type": "image/png",
             "sizes": "512x512"
-        }
-    ],
-    "screenshots": [
-        {
-            "src": "img/screenshot-desktop.jpg",
-            "sizes": "1920x1080",
-            "type": "image/jpeg",
-            "form_factor": "wide"
-        },
-        {
-            "src": "img/screenshot-mobile.jpg",
-            "sizes": "1080x1920",
-            "type": "image/jpeg",
-            "form_factor": "narrow"
         }
     ]
 }
