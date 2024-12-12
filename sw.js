@@ -7,6 +7,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 const APP_SHELL = [
     //'/',
     'index.html',
+    'manifest.json',
     'css/style.css',
     'img/favicon.ico',
     'img/avatars/hulk.jpg',
@@ -16,6 +17,8 @@ const APP_SHELL = [
     'img/avatars/wolverine.jpg',
     'js/app.js',
     'js/sw-utils.js',
+    'img/screenshot-desktop.jpg',
+    'img/screenshot-mobile.jpg',
 ];
 
 const APP_SHELL_INMUTABLE = [
